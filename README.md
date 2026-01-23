@@ -1,2 +1,2 @@
 # WordPress-Plugin
-Canva Page Design Convert to WordPress Block Patterns
+Convert Canva-style web page designs into responsive WordPress block patterns with full per-block customization.
