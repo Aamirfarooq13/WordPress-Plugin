@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Herb & Beauty Landing Page Patterns
- * Description: Block-based landing page patterns for herbs & spices and health & beauty products.
+ * Plugin Name: Canva Web Page Patterns
+ * Description: Convert Canva-style web page layouts into responsive WordPress block patterns with fully customizable blocks.
  * Version: 1.0.0
  * Requires at least: 6.9
  * Requires PHP: 7.4
@@ -24,6 +24,10 @@ add_action('init', function () {
             'label' => __('Herbs, Spices, Health & Beauty', 'herb-beauty-patterns'),
             'description' => __('Vibrant landing page layouts tailored for herbal, spice, and wellness brands.', 'herb-beauty-patterns'),
         ],
+        'canva-web-layouts' => [
+            'label' => __('Canva Web Page Layouts', 'herb-beauty-patterns'),
+            'description' => __('Canva-inspired web page designs converted into responsive, block-based patterns.', 'herb-beauty-patterns'),
+        ],
     ];
 
     foreach ($categories as $slug => $args) {
@@ -35,6 +39,7 @@ add_action('init', function () {
     $patterns = [
         'herbs-spices-landing' => __DIR__ . '/patterns/herbs-spices-landing.php',
         'health-beauty-landing' => __DIR__ . '/patterns/health-beauty-landing.php',
+        'canva-webpage-conversion' => __DIR__ . '/patterns/canva-webpage-conversion.php',
     ];
 
     foreach ($patterns as $name => $path) {
